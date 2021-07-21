@@ -19,7 +19,7 @@ done
 
 #tor &
 
-/xray version
+/xray version > /xray.ver
 /xray -config /xray.json &
 
 caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
