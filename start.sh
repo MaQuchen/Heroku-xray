@@ -16,7 +16,7 @@ done
 
 # start
 
-# don'tt shtart tor
+
 #tor &
 
 /xray version
