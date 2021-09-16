@@ -4,16 +4,16 @@
     "keywords": ["xray vmess vless trojan shadowsocks socks tor"],
     "env": {
         "AA": {
-            "description": "初阶用户只需修改以下AUUID点击页面最后的Deploy app按钮即可开始部署",
+            "description": "初阶用户只需修改以下AUUID点击页面最后的Deploy app按钮即可开始部署,一般不改",
             "value": "如出现错误，请检查参数格式或多尝试几次。使用自定义参数请务必先充分理解其含义"
         },
         "AUUID": {
-            "description": "UUID充当各个配置的路径和账号密码，建议修改和妥善保存,可生成UUID的网站: https://www.uuidgenerator.net",
+            "description": "必改：UUID充当各个配置的路径和账号密码，建议修改和妥善保存,可生成UUID的网站: https://www.uuidgenerator.net",
             "value": "8f91b6a0-e8ee-11ea-adc1-0242ac120002"
         },
         "CADDYIndexPage": {
             "description": "自定义CADDY部署完成后点击View的显示页面，参考：https://github.com/mixool/xrayku/blob/master/etc/CADDYIndexPage.md",
-            "value": "https://github.com/wulabing/3DCEList/archive/master.zip"
+            "value": "https://github.com/PavelDoGreat/WebGL-Fluid-Simulation/archive/master.zip"
         },
         "CONFIGCADDY": {
             "description": "自定义网络地址读取配置运行CADDY，不熟悉CADDY配置的请勿修改",
