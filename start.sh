@@ -16,8 +16,8 @@ done
 
 # start
 
-
-tor &
+# don't run tor
+# tor &
 
 /xray -config /xray.json &
 
