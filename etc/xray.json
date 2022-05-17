@@ -12,9 +12,9 @@
             "streamSettings": {"network": "ws","wsSettings": {"path": "/emma/vlessws"}}
         },
         {
-            "listen": "/etc/caddy/trojan","protocol": "trojan",
-            "settings": {"clients": [{"password":"$AUUID"}]},
-            "streamSettings": {"network": "ws","wsSettings": {"path": "/emma/vless-trojan"}}
+            "listen": "/etc/caddy/grpc","protocol": "vless",
+            "settings": {"clients": [{"id": "$AUUID"}],"decryption": "none"},
+            "streamSettings": {"network": "grpc","grpcSettings": {"serviceName": "/emma/vlessgrpc"}}
         }
     ],
     "outbounds": [
