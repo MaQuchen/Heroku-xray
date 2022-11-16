@@ -1,0 +1,26 @@
+{
+    "inbounds": 
+    [
+        {
+            "listen": "/etc/caddy/vmess","protocol": "vmess",
+            "settings": {"clients": [{"id": "$AUUID"}]},
+            "streamSettings": {"network": "ws","wsSettings": {"path": "/emma/vmessws"}}
+        },
+        {
+            "listen": "/etc/caddy/vless","protocol": "vless",
+            "settings": {"clients": [{"id": "$AUUID"}],"decryption": "none"},
+            "streamSettings": {"network": "ws","wsSettings": {"path": "/emma/vlessws"}}
+        },
+        {
+            "listen": "/etc/caddy/grpc","protocol": "vless",
+            "settings": {"clients": [{"id": "$AUUID"}],"decryption": "none"},
+            "streamSettings": {"network": "grpc","grpcSettings": {"serviceName": "/emma/vlessgrpc"}}
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom",
+            "settings": {}
+        }
+    ]
+}
